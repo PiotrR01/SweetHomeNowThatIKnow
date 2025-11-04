@@ -29,6 +29,7 @@ h1 {
   margin-top: 6rem;
   margin-bottom: 6rem;
   justify-self: center;
+  justify-contents: center;
   align-self: center; 
 }
 
