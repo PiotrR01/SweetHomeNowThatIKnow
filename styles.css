@@ -9,6 +9,11 @@ a {
   text-decoration: none; 
 }
 
+h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .navright {
   text-align: right;
   font-size: 1rem;
@@ -34,6 +39,7 @@ a {
 .bodybody {
   background-color: #a98abc;
   justify-self: center;
+  overflow: hidden;
 }
 
 .navcenter {
@@ -105,4 +111,95 @@ a {
   .bodybody {width: 950px;}
   .aboutusleft {width: calc(100% - 300px - 1rem);}
   .aboutusright {display: block; width: 300px; height: auto;}
+}
+
+.tabs {
+    display: flex;
+    gap: 2rem;
+    padding-bottom: 2rem;
+}
+
+.tab {
+    appearance: none;
+    background-color: transparent;
+    color: #ffffff;
+    align-self: flex-end;
+    justify-content: left;
+    text-align: left;
+    justify-self: left;
+    padding: 0;
+    padding-bottom: 2px;
+    font-size: 1.2rem;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    overflow: visible;
+}
+
+.tab[aria-selected="true"] {
+  border-bottom: 3px solid #ffffff;
+  width: calc(100% + 50px);
+  font-weight: bold;
+}
+
+.cardheader {
+  display: flex;
+  align-items: flex-start
+  gaps: 1rem;
+}
+
+.foodname {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.price{
+  flex: 0 0 3rem;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.card h4 { 
+  font-size:1.2rem; 
+  margin: 0;
+}
+
+.card p {
+  margin-top:0px; 
+  margin-bottom:1rem; 
+  color: #f0f0f0; 
+}
+
+.cakeswrap {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content:space-between;
+}
+
+.cakecarousel {
+  margin: auto;
+  width: 90%;
+  display:flex;
+  overflow-x: auto;
+}
+
+.cakegroup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap : 1rem;
+}
+
+.cardcake {
+  flex: 0 0 5rem;
+  height: 2rem; 
+  padding: 1rem;
+  background: cornflowerblue; 
+  font-size: 3rem; 
+  border-radius: .2em; 
+  text-align: center;
+  align-content: center;
 }
