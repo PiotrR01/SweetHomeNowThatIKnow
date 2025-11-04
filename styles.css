@@ -39,6 +39,7 @@ h1 {
 .bodybody {
   background-color: #a98abc;
   justify-self: center;
+  justify-content: center;
   overflow: hidden;
 }
 
